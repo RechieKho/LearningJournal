@@ -11,12 +11,12 @@ module.exports = (env) => {
       module: {
         rules: [
           {
-            test: /\.(ts|tsx)$/,
+            test: /\.(ts|tsx)$/i,
             use: ["ts-loader"],
             include: path.resolve(__dirname, "src"),
           },
           {
-            test: /\.(jpg|jpeg|png)$/,
+            test: /\.(jpg|jpeg|png|gif)$/i,
             use: ["url-loader"],
           },
         ],
