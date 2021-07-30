@@ -1,0 +1,1 @@
+export const joinClassName = (...className: string[]) => className.toString().replace(","," ");
